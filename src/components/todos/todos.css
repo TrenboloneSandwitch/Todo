@@ -1,0 +1,30 @@
+.input-header {
+  color: red;
+  font-size: 1.5rem;
+
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  background: none;
+  line-height: 2;
+  width: 80%;
+}
+.input-header:focus {
+  background-color: rgba(00, 00, 00, 0.03);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: flex-start;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-gap: 1px;
+  grid-auto-flow: dense;
+}
+
+.todo {
+  height: min-content;
+  border: 1px solid black;
+}
